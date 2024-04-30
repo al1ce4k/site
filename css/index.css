@@ -59,3 +59,28 @@
   }
   
   
+  #menu-background-image {
+    background-image: url("/site/images/purple.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-position: center 40%;
+    background-size: 110vmax;
+    height: 100%;
+    left: 0px;  
+    opacity: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 6;
+    transition: opacity 800ms ease,
+      background-size 800ms ease,
+      background-position 800ms ease;
+    width: 100%;
+    z-index: -8;
+  }
+
+  .strokeme
+{
+    color: white;
+    text-shadow: 1px 1px 2px purple, 0 0 1em purple, 0 0 1em purple;
+}
