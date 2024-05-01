@@ -71,7 +71,7 @@
     position: absolute;
     left: 0px;
     top: 0px;
-    z-index: 6;
+    z-index: auto;
     transition: opacity 800ms ease,
       background-size 800ms ease,
       background-position 800ms ease;
