@@ -58,7 +58,6 @@
     font-style: italic;
   }
   
-  
   #menu-background-image {
     background-image: url("https://images.unsplash.com/photo-1482686115713-0fbcaced6e28?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     filter: blur(8px);
@@ -77,13 +76,16 @@
       background-position 800ms ease;
     width: 100%;
     z-index: -8;
-    background-repeat:  none;
-    background-size: cover;
+    background-repeat:  none;    background-size: cover;
 
-    
   }
   .strokeme
 {
     color: white;
     text-shadow: 1px 1px 2px purple, 0 0 1em purple, 0 0 1em purple;
+}
+
+.outline {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
