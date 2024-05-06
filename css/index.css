@@ -77,8 +77,11 @@
       background-position 800ms ease;
     width: 100%;
     z-index: -8;
-  }
+    background-repeat:  none;
+    background-size: cover;
 
+    
+  }
   .strokeme
 {
     color: white;
