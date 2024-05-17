@@ -89,3 +89,11 @@
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+.rotating-text {
+  display: inline-block;
+  transition: transform 0.2s;
+}
+.rotating-text.rotate {
+  transform: rotateY(360deg);
+}
