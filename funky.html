@@ -15,10 +15,14 @@ permalink: /funky
   <meta content="#203c7e" data-react-helmet="true" name="theme-color" />
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="css/index.css">
-<head>
+  <link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/index.css"></noscript>
+</head>
 
-  <body>
-    <section>
-      <img src="images/funky-cirno.gif" alt="funky" width="500" height="500">
-  </body>
+<body>
+  <section>
+    <img src="images/funky-cirno.gif" alt="funky" width="500" height="500">
+  </section>
+</body>
+
+</html>
