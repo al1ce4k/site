@@ -1,0 +1,45 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Georgia', serif; /* Classical font */
+}
+
+/* Background image container */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/reimu.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px); /* Slight blur effect for the background image */
+    z-index: -1;
+}
+
+/* Center the text perfectly in the middle of the screen */
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+    z-index: 1;
+}
+
+/* Style for the small text below the main message */
+.small-text {
+    font-size: 0.8rem; /* Smaller font size */
+    margin-top: 1rem; /* Small space between main text and discord handle */
+    color: rgba(255, 255, 255, 0.8); /* Slightly faded color */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
