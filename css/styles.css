@@ -43,3 +43,111 @@ html, body {
     color: rgba(255, 255, 255, 0.8); /* Slightly faded color */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+
+/* Mute/Unmute Button Styles */
+.mute-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 10px; /* Rounded square */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.mute-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mute-button i {
+    pointer-events: none; /* Prevent the icon from triggering any events */
+}
+
+/* Volume Slider Styles */
+.volume-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 150px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+    position: fixed;
+    top: 70px;
+    left: 10px;
+    z-index: 10;
+}
+
+.volume-slider:hover {
+    opacity: 1;
+}
+
+/* Slider Thumb (the circle that you drag) */
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s, transform 0.2s ease-in-out;
+}
+
+.volume-slider::-webkit-slider-thumb:hover {
+    background-color: #ffffff;
+    transform: scale(1.2); /* Slightly increase size on hover */
+}
+
+/* Firefox styles */
+.volume-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s, transform 0.2s ease-in-out;
+}
+
+.volume-slider::-moz-range-thumb:hover {
+    background-color: #ffffff;
+    transform: scale(1.2);
+}
+
+/* Track Styling */
+.volume-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.volume-slider::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.volume-slider::-ms-track {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    cursor: pointer;
+}
