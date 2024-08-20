@@ -38,7 +38,7 @@ html, body {
 
 /* Style for the small text below the main message */
 .small-text {
-    font-size: 0.8rem; /* Smaller font size */
+    font-size: 1rem; /* Smaller font size */
     margin-top: 1rem; /* Small space between main text and discord handle */
     color: rgba(255, 255, 255, 0.8); /* Slightly faded color */
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
